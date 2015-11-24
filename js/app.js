@@ -36,6 +36,8 @@ $scope.about = "About Me";
 })
 
 // Content controller: define $scope.url as an image
-myApp.controller('InterestsController', function($scope){
-$scope.url = '';
+myApp.controller ('InterestsController', ['$scope', '$http', function($scope, $http) {
+$http.get('js/interests.json').then(function(response){
+	$scope.interests = response.data;
 })
+}])

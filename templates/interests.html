@@ -1,5 +1,7 @@
 <h1>Interests</h1>
-<h2>I'm a big fan of hip hop and rap, and my favorite contemporary rappers are, Kendrick Lamar, J. Cole and Logic</h2>
+<li ng-repeat="content in interests">
+<h2>{{content.Interests}}</h2>
+</li>
 <div class="row" id="pictures">
 	<div class="col-md-4 col-md-4">
 		<img src="img/kendricklamar.jpg" alt="Kendrick Lamar"/>
@@ -10,8 +12,9 @@
 	<div class="col-md-4 col-md-4">
 		<img src="img/logic.jpg" alt="Logic"/>
 </div>
-
-<h2>I'm also a big fan of football and soccer. I love my Seahawks and Manchester United!</h2>
+<li ng-repeat="content in interests">
+<h2>{{content.Sports}}</h2>
+</li>
 <div class="row" id="pictures">
 	<div class="col-md-6 col-md-6">
 		<img src="img/seahawks.jpg" alt="Seahawks"/>
