@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Multipage Example</title>
+    <title>Rahul Banala</title>
     
     <!-- Libraries -->
     <script src="https://code.jquery.com/jquery.min.js"></script>
@@ -13,10 +13,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
 
     <!-- Add ui-router library here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script> 
     
     <!-- Custom code -->
     <script src="js/app.js"></script>
     <link href = "css/app.css" rel="stylesheet" type = "text/css"/>
+    <link href = "css/aboutme.css" rel="stylesheet" type = "text/css"/>
+    <link href = "css/interests.css" rel="stylesheet" type = "text/css"/>
     
   </head>
   <body>
@@ -24,12 +27,11 @@
       <header>
 
         <!-- Create links to different sections -->
-          <h1>This is the header -- it'll stick around</h1>        
-          <a class="btn btn-default">Home</a>
-          <a class="btn btn-default">Content</a>
-          <a class="btn btn-default">About</a>
+          <h1>Rahul Banala</h1>        
+          <a class="btn btn-default" ui-sref="home">Home</a>
+          <a class="btn btn-default" ui-sref="interests">Interests</a>
+          <a class="btn btn-default" ui-sref="aboutme">About Me</a>
   		</header>
-        
 
       <div class="container">
         <!-- This is where your content will display -->
@@ -37,7 +39,13 @@
       </div>
 
       <footer>
-          <h2>(This is the footer -- it'll stick around too)</h2>
+          <div class="footer">
+            </div>
+            <div class="footer-copyright">
+             <p>
+               &copy 2015 Rahul Banala
+            </p>
+    </div>
       </footer>
     </div>
   </body>
